@@ -10,6 +10,10 @@
 		7979A7CC300D390F00B6B7D9 /* EnergyDrift-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EnergyDrift-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXBuildFile section */
+		7979A800AA00AA00AA00AA03 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7979A800AA00AA00AA00AA02 /* SDWebImage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		7979A7DE300D391000B6B7D9 /* Exceptions for "EnergyDrift-iOS" folder in "EnergyDrift-iOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7979A800AA00AA00AA00AA03 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = "EnergyDrift-iOS";
 			packageProductDependencies = (
+				7979A800AA00AA00AA00AA02 /* SDWebImage */,
 			);
 			productName = "EnergyDrift-iOS";
 			productReference = 7979A7CC300D390F00B6B7D9 /* EnergyDrift-iOS.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 7979A7C3300D390F00B6B7D9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7979A800AA00AA00AA00AA01 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7979A7CD300D390F00B6B7D9 /* Products */;
 			projectDirPath = "";
@@ -116,6 +125,25 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7979A800AA00AA00AA00AA01 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7979A800AA00AA00AA00AA02 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7979A800AA00AA00AA00AA01 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7979A7CA300D390F00B6B7D9 /* Resources */ = {
