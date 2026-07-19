@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7979A800AA00AA00AA00AA03 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7979A800AA00AA00AA00AA02 /* FirebaseAnalytics */; };
+		7979A800AA00AA00AA00AA05 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7979A800AA00AA00AA00AA04 /* FirebaseCore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7979A7CC300D390F00B6B7D9 /* EnergyDrift-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EnergyDrift-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7979A800AA00AA00AA00AA03 /* FirebaseAnalytics in Frameworks */,
+				7979A800AA00AA00AA00AA05 /* FirebaseCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = "EnergyDrift-iOS";
 			packageProductDependencies = (
+				7979A800AA00AA00AA00AA02 /* FirebaseAnalytics */,
+				7979A800AA00AA00AA00AA04 /* FirebaseCore */,
 			);
 			productName = "EnergyDrift-iOS";
 			productReference = 7979A7CC300D390F00B6B7D9 /* EnergyDrift-iOS.app */;
@@ -107,6 +116,9 @@
 			);
 			mainGroup = 7979A7C3300D390F00B6B7D9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7979A800AA00AA00AA00AA01 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7979A7CD300D390F00B6B7D9 /* Products */;
 			projectDirPath = "";
@@ -343,6 +355,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7979A800AA00AA00AA00AA01 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7979A800AA00AA00AA00AA02 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7979A800AA00AA00AA00AA01 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7979A800AA00AA00AA00AA04 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7979A800AA00AA00AA00AA01 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7979A7C4300D390F00B6B7D9 /* Project object */;
 }
