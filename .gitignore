@@ -20,5 +20,10 @@ DerivedData/
 Pods/
 Carthage/Build/
 
+# Python (mock-server)
+__pycache__/
+*.pyc
+.venv/
+
 # Agent spec (internal, not for the repo)
 AGENT_SPEC_iOS.md
